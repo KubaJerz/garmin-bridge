@@ -4,12 +4,12 @@ Test diffrent methods for data retrieval off Garmin watches
 
 ______
 ### Option 1
-** Download the .FIT Activity file  **
+**Download the .FIT Activity file**
 
 This gives you some data from that avtivity but not the raw accelerometer and gyroscope data. 
 
 ### Option 2
-** Make own app to record **
+**Make own app to record**
 
 
 ____
