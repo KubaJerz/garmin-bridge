@@ -8,63 +8,65 @@ class bridgeView extends WatchUi.View {
     private var _accelEnabled = false;
     private var _timer = null;
     private var _lastAccelData = null;
-    private const TIMER_INTERVAL = 3000; // Print every 3 seconds
+    private var _recorder = null;
+    private var _statusField = null;
+    private const TIMER_INTERVAL = 3000; //print every 3 seconds
 
-    function initialize() {
+    function initialize(recorder) {
         View.initialize();
+        _recorder = recorder;
     }
 
-    // Load your resources here
+    // load resources
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
+        
+        // get  status text field in the layout
+        _statusField = View.findDrawableById("statusText");
     }
 
-    // Called when this View is brought to the foreground. Restore
-    // the state of this View and prepare it to be shown. This includes
-    // loading resources into memory.
+    // Called when this View is brought to the foreground
     function onShow() as Void {
-        // Enable accelerometer sensing when the view becomes visible
+        // Enable accel sensing when the view is visible
         if (!_accelEnabled) {
             enableAccelerometer();
         }
         
-        // Set up a timer to print accelerometer data regularly
+        // timer to print accel data 
         if (_timer == null) {
             _timer = new Timer.Timer();
             _timer.start(method(:onTimer), TIMER_INTERVAL, true);
         }
+        
+        updateUI();
     }
 
-    // Update the view
+    // update the view
     function onUpdate(dc as Dc) as Void {
-        // Call the parent onUpdate function to redraw the layout
+        updateUI();
         View.onUpdate(dc);
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
     function onHide() as Void {
-        // Disable accelerometer when view is hidden
+        // turn off accel when view is hidden
         disableAccelerometer();
         
-        // Stop the timer when the view is hidden
+        // stop the timer when the view is hidden
         if (_timer != null) {
             _timer.stop();
             _timer = null;
         }
     }
 
-    // Enable accelerometer data collection
-    function enableAccelerometer() as Void {
-        // Enable all sensors to get accelerometer data
-        Sensor.setEnabledSensors([]);  // First clear any existing sensors
+    // enable accel data collection
+    function enableAccelerometer() as Void {        
+        Sensor.setEnabledSensors([]); //enable default sensors
         Sensor.enableSensorEvents(method(:onSensorData));
         _accelEnabled = true;
         System.println("Accelerometer enabled");
     }
 
-    // Disable accelerometer data collection
+    // dissable accel data collection
     function disableAccelerometer() as Void {
         if (_accelEnabled) {
             Sensor.setEnabledSensors([]);
@@ -78,11 +80,15 @@ class bridgeView extends WatchUi.View {
     function onSensorData(sensorInfo as Sensor.Info) as Void {
         if (sensorInfo has :accel && sensorInfo.accel != null) {
             // Store the latest accelerometer data
-            _lastAccelData = sensorInfo.accel;
+            // Make sure we create a proper array to avoid type issues
+            var accelX = sensorInfo.accel[0];
+            var accelY = sensorInfo.accel[1];
+            var accelZ = sensorInfo.accel[2];
+            _lastAccelData = [accelX, accelY, accelZ];
         }
     }
     
-    // Timer callback to periodically print accelerometer data
+    // timer callback to print accel data
     function onTimer() as Void {
         if (_lastAccelData != null) {
             System.println("-------------------------------------");
@@ -93,6 +99,31 @@ class bridgeView extends WatchUi.View {
             System.println("-------------------------------------");
         } else {
             System.println("No accelerometer data available yet");
+        }
+        
+        updateUI();
+    }
+    
+    // update the UI with current status
+    function updateUI() as Void {
+        if (_statusField != null) {
+            var statusText = "Accel: ";
+            
+            // add recording status
+            if (_recorder != null && _recorder.isRecording()) {
+                statusText += "Recording...";
+            } else {
+                statusText += "Not recording";
+            }
+            
+            // add accel data
+            if (_lastAccelData != null) {
+                statusText += "\nX: " + _lastAccelData[0].format("%.2f");
+                statusText += " Y: " + _lastAccelData[1].format("%.2f");
+                statusText += " Z: " + _lastAccelData[2].format("%.2f");
+            }
+            
+            _statusField.setText(statusText);
         }
     }
 }

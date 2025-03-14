@@ -1,0 +1,291 @@
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [ActivityRecording,1,14,31]; ]
+import Toybox.ActivityRecording;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [SensorLogging,2,14,27]; ]
+import Toybox.SensorLogging;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Time,4,14,18]; ]
+import Toybox.Time;
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 6; @symbol_classdef = [AccelRecorder,6,6,19]; ]
+class AccelRecorder {
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 7; @position = 16; @symbol_vardef = [_logger,7,16,23]; ]
+    private
+    var _logger = null;
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 8; @position = 16; @symbol_vardef = [_session,8,16,24]; ]
+    private
+    var _session = null;
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 9; @position = 16; @symbol_vardef = [_isRecording,9,16,28]; ]
+    private
+    var _isRecording = false;
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 10; @position = 18; @symbol_constdef = [PREFIX,10,18,24]; ]
+    private
+    const PREFIX = "ACCEL_BRIDGE_";
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 12; @symbol_functiondef = [initialize,12,13,23]; ]
+    function initialize() as Void {
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_12_26_17_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 14 8 ]
+        symbol [ SensorLogging %tmp.3 14 22 35 ];
+        %tmp.3 = getm $.Toybox.SensorLogging;
+        symbol [ SensorLogger %tmp.4 14 36 48 ];
+        %tmp.4 = getv function ? %tmp.3 :SensorLogger;
+        %tmp.5 = newd 1;
+        %tmp.7 = const :enableAccelerometer;
+        symbol [ enableAccelerometer %tmp.7 15 13 32 const ];
+        %tmp.8 = true;
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.1 = newc %tmp.4 (%tmp.10);
+        symbol [ _logger ? 14 8 15 ];
+        putv self :_logger %tmp.1;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_12_26_17_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 20; @symbol_functiondef = [startRecording,20,13,27]; ]
+    function startRecording() {
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 21 8 ]
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_8_24_8_if_stmt:
+        symbol [ _isRecording %tmp.2 21 12 24 ];
+        %tmp.2 = getv ? :_isRecording;
+        bf %tmp.2 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_8_24_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_8_24_8_if_true:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_26_24_8_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 22 12 ]
+        symbol [ System %tmp.3 22 12 18 ];
+        %tmp.3 = getm $.Toybox.System;
+        symbol [ println %tmp.4 22 19 26 ];
+        %tmp.4 = getv function %tmp.3 :println;
+        %tmp.5 = "Already recording";
+        invoke %tmp.3 %tmp.4(%tmp.5);
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 23 12 ]
+        ret ?;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_26_24_8_stop:
+        goto @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_8_24_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_21_8_24_8_if_end:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 27 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_start" "_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 27 12 15 ];
+        symbol [ Time %tmp.6 27 18 22 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ now %tmp.7 27 23 26 ];
+        %tmp.7 = getv function %tmp.6 :now;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %now.1 %tmp.8;
+        symbol [ now %now.1 27 12 15 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 28 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_start" "_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_stop" ]
+        %timeString.2 = local;
+        symbol [ timeString %timeString.2 28 12 22 ];
+        %tmp.9 = lgetv %now.1;
+        symbol [ now %tmp.9 28 25 28 ];
+        symbol [ value %tmp.10 28 29 34 ];
+        %tmp.10 = getv function %tmp.9 :value;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        symbol [ toString %tmp.12 28 37 45 ];
+        %tmp.12 = getv function %tmp.11 :toString;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        lputv %timeString.2 %tmp.13;
+        symbol [ timeString %timeString.2 28 12 22 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 29 8 ]
+        [ "_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_start" "_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_stop" ]
+        %sessionName.3 = local;
+        symbol [ sessionName %sessionName.3 29 12 23 ];
+        symbol [ PREFIX %tmp.15 29 26 32 ];
+        %tmp.15 = getv ? :PREFIX;
+        %tmp.16 = lgetv %timeString.2;
+        symbol [ timeString %tmp.16 29 35 45 ];
+        %tmp.17 = add %tmp.15 %tmp.16;
+        lputv %sessionName.3 %tmp.17;
+        symbol [ sessionName %sessionName.3 29 12 23 ];
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 32 8 ]
+        symbol [ ActivityRecording %tmp.18 32 19 36 ];
+        %tmp.18 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.19 32 37 50 ];
+        %tmp.19 = getv function %tmp.18 :createSession;
+        %tmp.20 = newd 3;
+        %tmp.22 = const :name;
+        symbol [ name %tmp.22 33 13 17 const ];
+        %tmp.23 = lgetv %sessionName.3;
+        symbol [ sessionName %tmp.23 33 21 32 ];
+        %tmp.24 = dup %tmp.20;
+        %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+        %tmp.27 = const :sport;
+        symbol [ sport %tmp.27 34 13 18 const ];
+        symbol [ ActivityRecording %tmp.28 34 22 39 ];
+        %tmp.28 = getm $.Toybox.ActivityRecording;
+        symbol [ SPORT_GENERIC %tmp.29 34 40 53 ];
+        %tmp.29 = getv %tmp.28 :SPORT_GENERIC;
+        %tmp.30 = dup %tmp.25;
+        %tmp.31 = aputv %tmp.30 %tmp.27 %tmp.29;
+        %tmp.33 = const :sensorLogger;
+        symbol [ sensorLogger %tmp.33 35 13 25 const ];
+        symbol [ _logger %tmp.35 35 29 36 ];
+        %tmp.35 = getv ? :_logger;
+        %tmp.36 = dup %tmp.31;
+        %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+        %tmp.38 = invoke %tmp.18 %tmp.19(%tmp.37);
+        symbol [ _session ? 32 8 16 ];
+        putv self :_session %tmp.38;
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 39 8 ]
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_8_45_8_if_stmt:
+        symbol [ _session %tmp.40 39 12 20 ];
+        %tmp.40 = getv ? :_session;
+        %tmp.41 = null;
+        %tmp.42 = ne %tmp.40 %tmp.41;
+        bf %tmp.42 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_8_45_8_if_else_false;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_8_45_8_if_true:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_30_43_8_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 40 12 ]
+        symbol [ _session %tmp.44 40 12 20 ];
+        %tmp.44 = getv ? :_session;
+        %tmp.45 = as %tmp.44 { (!Null) };
+        symbol [ start %tmp.46 40 21 26 ];
+        %tmp.46 = getv function %tmp.45 :start;
+        invoke %tmp.45 %tmp.46();
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 41 12 ]
+        %tmp.47 = true;
+        symbol [ _isRecording ? 41 12 24 ];
+        putv self :_isRecording %tmp.47;
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 42 12 ]
+        symbol [ System %tmp.48 42 12 18 ];
+        %tmp.48 = getm $.Toybox.System;
+        symbol [ println %tmp.49 42 19 26 ];
+        %tmp.49 = getv function %tmp.48 :println;
+        %tmp.50 = "Recording started - saving to FIT file: ";
+        %tmp.51 = lgetv %sessionName.3;
+        symbol [ sessionName %tmp.51 42 72 83 ];
+        %tmp.52 = add %tmp.50 %tmp.51;
+        invoke %tmp.48 %tmp.49(%tmp.52);
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_30_43_8_stop:
+        goto @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_8_45_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_8_45_8_if_else_false:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_43_15_45_8_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 44 12 ]
+        symbol [ System %tmp.53 44 12 18 ];
+        %tmp.53 = getm $.Toybox.System;
+        symbol [ println %tmp.54 44 19 26 ];
+        %tmp.54 = getv function %tmp.53 :println;
+        %tmp.55 = "Failed to create recording session";
+        invoke %tmp.53 %tmp.54(%tmp.55);
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_43_15_45_8_stop:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_39_8_45_8_if_end:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_20_30_46_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 49; @symbol_functiondef = [stopRecording,49,13,26]; ]
+    function stopRecording() {
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_49_29_59_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 50 8 ]
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_8_53_8_if_stmt:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_12_50_41_begin:
+        symbol [ _isRecording %tmp.2 50 13 25 ];
+        %tmp.2 = getv ? :_isRecording;
+        %tmp.3 = not %tmp.2;
+        bt %tmp.3 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_8_53_8_if_true;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_29_50_41_false:
+        symbol [ _session %tmp.5 50 29 37 ];
+        %tmp.5 = getv ? :_session;
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        push %tmp.7;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_29_50_41_end:
+        %tmp.8 = phi [%tmp.3 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_12_50_41_begin] [%tmp.7 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_29_50_41_false] [%tmp.8 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_29_50_41_end];
+        bf %tmp.8 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_8_53_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_8_53_8_if_true:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_47_53_8_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 51 12 ]
+        symbol [ System %tmp.9 51 12 18 ];
+        %tmp.9 = getm $.Toybox.System;
+        symbol [ println %tmp.10 51 19 26 ];
+        %tmp.10 = getv function %tmp.9 :println;
+        %tmp.11 = "Not recording";
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 52 12 ]
+        ret ?;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_47_53_8_stop:
+        goto @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_8_53_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_50_8_53_8_if_end:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 56 8 ]
+        symbol [ _session %tmp.13 56 8 16 ];
+        %tmp.13 = getv ? :_session;
+        symbol [ stop %tmp.14 56 17 21 ];
+        %tmp.14 = getv function %tmp.13 :stop;
+        invoke %tmp.13 %tmp.14();
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 57 8 ]
+        %tmp.15 = false;
+        symbol [ _isRecording ? 57 8 20 ];
+        putv self :_isRecording %tmp.15;
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 58 8 ]
+        symbol [ System %tmp.16 58 8 14 ];
+        %tmp.16 = getm $.Toybox.System;
+        symbol [ println %tmp.17 58 15 22 ];
+        %tmp.17 = getv function %tmp.16 :println;
+        %tmp.18 = "Recording stopped";
+        invoke %tmp.16 %tmp.17(%tmp.18);
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_49_29_59_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 62; @symbol_functiondef = [saveRecording,62,13,26]; ]
+    function saveRecording() {
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_62_29_72_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 63 8 ]
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_8_66_8_if_stmt:
+        symbol [ _session %tmp.2 63 12 20 ];
+        %tmp.2 = getv ? :_session;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_8_66_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_8_66_8_if_true:
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_30_66_8_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 64 12 ]
+        symbol [ System %tmp.5 64 12 18 ];
+        %tmp.5 = getm $.Toybox.System;
+        symbol [ println %tmp.6 64 19 26 ];
+        %tmp.6 = getv function %tmp.5 :println;
+        %tmp.7 = "No recording to save";
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 65 12 ]
+        ret ?;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_30_66_8_stop:
+        goto @_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_8_66_8_if_end;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_63_8_66_8_if_end:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 69 8 ]
+        symbol [ _session %tmp.9 69 8 16 ];
+        %tmp.9 = getv ? :_session;
+        symbol [ save %tmp.10 69 17 21 ];
+        %tmp.10 = getv function %tmp.9 :save;
+        invoke %tmp.9 %tmp.10();
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 70 8 ]
+        symbol [ System %tmp.11 70 8 14 ];
+        %tmp.11 = getm $.Toybox.System;
+        symbol [ println %tmp.12 70 15 22 ];
+        %tmp.12 = getv function %tmp.11 :println;
+        %tmp.13 = "Recording saved to FIT file with prefix: ";
+        symbol [ PREFIX %tmp.15 70 69 75 ];
+        %tmp.15 = getv ? :PREFIX;
+        %tmp.16 = add %tmp.13 %tmp.15;
+        invoke %tmp.11 %tmp.12(%tmp.16);
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 71 8 ]
+        %tmp.17 = null;
+        symbol [ _session ? 71 8 16 ];
+        putv self :_session %tmp.17;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_62_29_72_4_stop:
+    }
+    [ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 74; @symbol_functiondef = [isRecording,74,13,24]; ]
+    function isRecording() {
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_74_27_76_4_start:
+[ "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc" 75 8 ]
+        symbol [ _isRecording %tmp.2 75 15 27 ];
+        %tmp.2 = getv ? :_isRecording;
+        ret %tmp.2;
+_Users_kuba_Desktop_playground_garmin_test_test_bridge_bridge_source_AccelRecorder_mc_74_27_76_4_stop:
+    }
+}
+[ @file = "/Users/kuba/Desktop/playground/garmin-test/test-bridge/bridge/source/AccelRecorder.mc"; @line = 1; ]
+<init> {
+}
