@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="1" lineNum="5" parent="globals/bridgeDelegate" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="2" lineNum="7" parent="globals/bridgeView" pc="268435469" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="3" lineNum="36" parent="globals" pc="268435481" symbol="getApp"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="3" lineNum="37" parent="globals" pc="268435491" symbol="getApp"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435502" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="5" lineNum="5" parent="globals/bridgeApp" pc="268435522" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="13" parent="globals/bridgeDelegate" pc="268435534" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="14" parent="globals/bridgeDelegate" pc="268435536" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="15" parent="globals/bridgeDelegate" pc="268435545" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="17" parent="globals/bridgeDelegate" pc="268435559" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="18" parent="globals/bridgeDelegate" pc="268435571" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="19" parent="globals/bridgeDelegate" pc="268435583" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="22" parent="globals/bridgeDelegate" pc="268435604" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="23" parent="globals/bridgeDelegate" pc="268435616" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="25" parent="globals/bridgeDelegate" pc="268435634" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="6" lineNum="27" parent="globals/bridgeDelegate" pc="268435645" symbol="onMenu"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="7" lineNum="8" parent="globals/bridgeDelegate" pc="268435647" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="7" lineNum="9" parent="globals/bridgeDelegate" pc="268435649" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="7" lineNum="10" parent="globals/bridgeDelegate" pc="268435661" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="30" parent="globals/bridgeDelegate" pc="268435671" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="31" parent="globals/bridgeDelegate" pc="268435673" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="32" parent="globals/bridgeDelegate" pc="268435682" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="33" parent="globals/bridgeDelegate" pc="268435696" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="34" parent="globals/bridgeDelegate" pc="268435708" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="35" parent="globals/bridgeDelegate" pc="268435720" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="37" parent="globals/bridgeDelegate" pc="268435741" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="38" parent="globals/bridgeDelegate" pc="268435753" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="40" parent="globals/bridgeDelegate" pc="268435771" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeDelegate.mc" id="8" lineNum="42" parent="globals/bridgeDelegate" pc="268435782" symbol="onSelect"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="29" parent="globals/bridgeView" pc="268435784" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="31" parent="globals/bridgeView" pc="268435786" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="32" parent="globals/bridgeView" pc="268435795" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="36" parent="globals/bridgeView" pc="268435802" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="37" parent="globals/bridgeView" pc="268435811" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="38" parent="globals/bridgeView" pc="268435840" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="9" lineNum="41" parent="globals/bridgeView" pc="268435871" symbol="onShow"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="10" lineNum="21" parent="globals/bridgeView" pc="268435879" symbol="onLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="10" lineNum="22" parent="globals/bridgeView" pc="268435881" symbol="onLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="10" lineNum="25" parent="globals/bridgeView" pc="268435914" symbol="onLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="108" parent="globals/bridgeView" pc="268435940" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="109" parent="globals/bridgeView" pc="268435943" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="110" parent="globals/bridgeView" pc="268435952" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="113" parent="globals/bridgeView" pc="268435959" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="114" parent="globals/bridgeView" pc="268435982" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="116" parent="globals/bridgeView" pc="268435995" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="120" parent="globals/bridgeView" pc="268436005" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="121" parent="globals/bridgeView" pc="268436014" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="122" parent="globals/bridgeView" pc="268436045" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="123" parent="globals/bridgeView" pc="268436077" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="11" lineNum="126" parent="globals/bridgeView" pc="268436109" symbol="updateUI"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="12" lineNum="62" parent="globals/bridgeView" pc="268436126" symbol="enableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="12" lineNum="63" parent="globals/bridgeView" pc="268436128" symbol="enableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="12" lineNum="64" parent="globals/bridgeView" pc="268436143" symbol="enableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="12" lineNum="65" parent="globals/bridgeView" pc="268436169" symbol="enableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="12" lineNum="66" parent="globals/bridgeView" pc="268436177" symbol="enableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="13" lineNum="70" parent="globals/bridgeView" pc="268436196" symbol="disableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="13" lineNum="71" parent="globals/bridgeView" pc="268436198" symbol="disableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="13" lineNum="72" parent="globals/bridgeView" pc="268436206" symbol="disableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="13" lineNum="73" parent="globals/bridgeView" pc="268436221" symbol="disableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="13" lineNum="74" parent="globals/bridgeView" pc="268436235" symbol="disableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="13" lineNum="75" parent="globals/bridgeView" pc="268436243" symbol="disableAccelerometer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="14" lineNum="80" parent="globals/bridgeView" pc="268436262" symbol="onSensorData"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="14" lineNum="81" parent="globals/bridgeView" pc="268436265" symbol="onSensorData"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="14" lineNum="84" parent="globals/bridgeView" pc="268436287" symbol="onSensorData"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="14" lineNum="85" parent="globals/bridgeView" pc="268436298" symbol="onSensorData"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="14" lineNum="86" parent="globals/bridgeView" pc="268436310" symbol="onSensorData"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="14" lineNum="87" parent="globals/bridgeView" pc="268436322" symbol="onSensorData"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="15" lineNum="15" parent="globals/bridgeView" pc="268436349" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="15" lineNum="16" parent="globals/bridgeView" pc="268436351" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="15" lineNum="17" parent="globals/bridgeView" pc="268436363" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="16" lineNum="50" parent="globals/bridgeView" pc="268436373" symbol="onHide"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="16" lineNum="52" parent="globals/bridgeView" pc="268436375" symbol="onHide"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="16" lineNum="55" parent="globals/bridgeView" pc="268436382" symbol="onHide"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="16" lineNum="56" parent="globals/bridgeView" pc="268436391" symbol="onHide"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="16" lineNum="57" parent="globals/bridgeView" pc="268436403" symbol="onHide"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="17" lineNum="45" parent="globals/bridgeView" pc="268436412" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="17" lineNum="46" parent="globals/bridgeView" pc="268436414" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="17" lineNum="47" parent="globals/bridgeView" pc="268436421" symbol="onUpdate"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="92" parent="globals/bridgeView" pc="268436438" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="93" parent="globals/bridgeView" pc="268436440" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="94" parent="globals/bridgeView" pc="268436449" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="95" parent="globals/bridgeView" pc="268436467" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="96" parent="globals/bridgeView" pc="268436485" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="97" parent="globals/bridgeView" pc="268436511" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="98" parent="globals/bridgeView" pc="268436538" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="99" parent="globals/bridgeView" pc="268436565" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="101" parent="globals/bridgeView" pc="268436586" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeView.mc" id="18" lineNum="104" parent="globals/bridgeView" pc="268436604" symbol="onTimer"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="19" lineNum="14" parent="globals/bridgeApp" pc="268436612" symbol="onStart"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="19" lineNum="16" parent="globals/bridgeApp" pc="268436614" symbol="onStart"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="19" lineNum="17" parent="globals/bridgeApp" pc="268436623" symbol="onStart"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="20" lineNum="31" parent="globals/bridgeApp" pc="268436636" symbol="getInitialView"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="20" lineNum="32" parent="globals/bridgeApp" pc="268436638" symbol="getInitialView"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="21" lineNum="8" parent="globals/bridgeApp" pc="268436703" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="21" lineNum="9" parent="globals/bridgeApp" pc="268436705" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="21" lineNum="10" parent="globals/bridgeApp" pc="268436717" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="22" lineNum="22" parent="globals/bridgeApp" pc="268436747" symbol="onStop"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="22" lineNum="24" parent="globals/bridgeApp" pc="268436749" symbol="onStop"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="22" lineNum="25" parent="globals/bridgeApp" pc="268436772" symbol="onStop"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/bridgeApp.mc" id="22" lineNum="26" parent="globals/bridgeApp" pc="268436784" symbol="onStop"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="23" lineNum="74" parent="globals/AccelRecorder" pc="268436797" symbol="isRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="23" lineNum="75" parent="globals/AccelRecorder" pc="268436799" symbol="isRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="20" parent="globals/AccelRecorder" pc="268436805" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="21" parent="globals/AccelRecorder" pc="268436808" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="22" parent="globals/AccelRecorder" pc="268436816" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="23" parent="globals/AccelRecorder" pc="268436834" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="27" parent="globals/AccelRecorder" pc="268436835" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="28" parent="globals/AccelRecorder" pc="268436847" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="29" parent="globals/AccelRecorder" pc="268436862" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="32" parent="globals/AccelRecorder" pc="268436872" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="39" parent="globals/AccelRecorder" pc="268436922" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="40" parent="globals/AccelRecorder" pc="268436931" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="41" parent="globals/AccelRecorder" pc="268436943" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="42" parent="globals/AccelRecorder" pc="268436951" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="24" lineNum="44" parent="globals/AccelRecorder" pc="268436973" symbol="startRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="25" lineNum="12" parent="globals/AccelRecorder" pc="268436992" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="25" lineNum="14" parent="globals/AccelRecorder" pc="268436994" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="62" parent="globals/AccelRecorder" pc="268437036" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="63" parent="globals/AccelRecorder" pc="268437038" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="64" parent="globals/AccelRecorder" pc="268437047" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="65" parent="globals/AccelRecorder" pc="268437065" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="69" parent="globals/AccelRecorder" pc="268437066" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="70" parent="globals/AccelRecorder" pc="268437078" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="26" lineNum="71" parent="globals/AccelRecorder" pc="268437096" symbol="saveRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="49" parent="globals/AccelRecorder" pc="268437105" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="50" parent="globals/AccelRecorder" pc="268437107" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="51" parent="globals/AccelRecorder" pc="268437125" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="52" parent="globals/AccelRecorder" pc="268437143" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="56" parent="globals/AccelRecorder" pc="268437144" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="57" parent="globals/AccelRecorder" pc="268437156" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/source/AccelRecorder.mc" id="27" lineNum="58" parent="globals/AccelRecorder" pc="268437164" symbol="stopRecording"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="28" lineNum="13" parent="globals/Rez/Layouts" pc="268437183" symbol="MainLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="28" lineNum="14" parent="globals/Rez/Layouts" pc="268437194" symbol="MainLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="28" lineNum="16" parent="globals/Rez/Layouts" pc="268437294" symbol="MainLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="28" lineNum="18" parent="globals/Rez/Layouts" pc="268437383" symbol="MainLayout"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="29" lineNum="23" parent="globals/Rez/Menus/MainMenu" pc="268437398" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="30" lineNum="24" parent="globals/Rez/Menus/MainMenu" pc="268437410" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="30" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437412" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="30" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268437424" symbol="initialize"/>
+        <entry filename="/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" id="30" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437469" symbol="initialize"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="8390184" symbol="sensorLogger"/>
+        <entry field="true" id="14" symbol="&lt;globals/bridgeView/&lt;&gt;_recorder&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="5" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="29" method="true" symbol="stopRecording"/>
+        <entry id="28" method="true" symbol="startRecording"/>
+        <entry id="8388638" module="true" symbol="ActivityRecording"/>
+        <entry id="31" method="true" symbol="MainLayout"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry id="8390135" method="true" symbol="enableAccelerometer"/>
+        <entry field="true" id="8389605" symbol="accel"/>
+        <entry id="9" object="true" symbol="bridgeDelegate"/>
+        <entry field="true" id="11" symbol="&lt;globals/bridgeDelegate/&lt;&gt;_recorder&gt;"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="18" method="true" symbol="onSensorData"/>
+        <entry field="true" id="33" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389080" method="true" symbol="onMenu"/>
+        <entry id="27" method="true" symbol="saveRecording"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="36" symbol="prompt"/>
+        <entry field="true" id="16" symbol="&lt;globals/bridgeView/&lt;&gt;_timer&gt;"/>
+        <entry field="true" id="23" symbol="&lt;globals/bridgeApp/&lt;&gt;_recorder&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="38" symbol="item_2"/>
+        <entry id="37" symbol="item_1"/>
+        <entry id="22" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="24" symbol="&lt;globals/AccelRecorder/&lt;&gt;_isRecording&gt;"/>
+        <entry field="true" id="13" symbol="&lt;globals/bridgeView/&lt;&gt;_lastAccelData&gt;"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="32" object="true" symbol="MainMenu"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="7" object="true" symbol="AccelRecorder"/>
+        <entry id="17" method="true" symbol="disableAccelerometer"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8388881" method="true" symbol="isRecording"/>
+        <entry field="true" id="30" symbol="LauncherIcon"/>
+        <entry id="10" object="true" symbol="bridgeView"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8388643" module="true" symbol="Sensor"/>
+        <entry id="8390175" module="true" symbol="SensorLogging"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="20" method="true" symbol="updateUI"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="26" symbol="&lt;globals/AccelRecorder/&lt;&gt;_session&gt;"/>
+        <entry id="8" object="true" symbol="bridgeApp"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="12" symbol="&lt;globals/bridgeView/&lt;&gt;_accelEnabled&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="21" module="true" symbol="Layouts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="15" symbol="&lt;globals/bridgeView/&lt;&gt;_statusField&gt;"/>
+        <entry id="19" method="true" symbol="onTimer"/>
+        <entry field="true" id="25" symbol="&lt;globals/AccelRecorder/&lt;&gt;_logger&gt;"/>
+        <entry field="true" id="35" symbol="menu_label_2"/>
+        <entry field="true" id="34" symbol="menu_label_1"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435670" name="recorder" stackId="1" startPc="268435647"/>
+        <entry arg="true" endPc="268435939" name="dc" stackId="1" startPc="268435879"/>
+        <entry endPc="268436124" name="statusText" stackId="1" startPc="268435952"/>
+        <entry arg="true" endPc="268436348" name="sensorInfo" stackId="1" startPc="268436262"/>
+        <entry endPc="268436347" name="accelX" stackId="2" startPc="268436287"/>
+        <entry endPc="268436347" name="accelY" stackId="3" startPc="268436287"/>
+        <entry endPc="268436347" name="accelZ" stackId="4" startPc="268436287"/>
+        <entry arg="true" endPc="268436372" name="recorder" stackId="1" startPc="268436349"/>
+        <entry arg="true" endPc="268436437" name="dc" stackId="1" startPc="268436412"/>
+        <entry arg="true" endPc="268436635" name="state" stackId="1" startPc="268436612"/>
+        <entry arg="true" endPc="268436796" name="state" stackId="1" startPc="268436747"/>
+        <entry endPc="268436990" name="now" stackId="1" startPc="268436808"/>
+        <entry endPc="268436990" name="timeString" stackId="2" startPc="268436808"/>
+        <entry endPc="268436990" name="sessionName" stackId="3" startPc="268436808"/>
+        <entry arg="true" endPc="268437397" name="dc" stackId="1" startPc="268437183"/>
+    </localVars>
+    <deviceInfo deviceVersion="de121dfa604491767422db2c3063530f8fd6465b" partNumber="006-B4575-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/bridgeDelegate" offset="152" parentId="globals" symbolId="bridgeDelegate" type="class"/>
+        <dataEntry label="globals/bridgeView" offset="223" parentId="globals" symbolId="bridgeView" type="class"/>
+        <dataEntry label="globals/Rez" offset="393" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/bridgeApp" offset="455" parentId="globals" symbolId="bridgeApp" type="class"/>
+        <dataEntry label="globals/AccelRecorder" offset="535" parentId="globals" symbolId="AccelRecorder" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="642" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="677" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="712" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="747" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="809" parentId="Menus" symbolId="MainMenu" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="bridgeDelegate" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435480" name="&lt;init&gt;" parent="bridgeView" startPc="268435469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435501" name="getApp" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435521" name="&lt;init&gt;" parent="Rez" startPc="268435502">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435533" name="&lt;init&gt;" parent="bridgeApp" startPc="268435522">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="AccelRecorder">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435646" name="onMenu" parent="bridgeDelegate" startPc="268435534">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435670" name="initialize" parent="bridgeDelegate" startPc="268435647">
+            <param id="recorder"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435783" name="onSelect" parent="bridgeDelegate" startPc="268435671">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435878" name="onShow" parent="bridgeView" startPc="268435784">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435939" name="onLayout" parent="bridgeView" startPc="268435879">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436125" name="updateUI" parent="bridgeView" startPc="268435940">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436195" name="enableAccelerometer" parent="bridgeView" startPc="268436126">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436261" name="disableAccelerometer" parent="bridgeView" startPc="268436196">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436348" name="onSensorData" parent="bridgeView" startPc="268436262">
+            <param id="sensorInfo"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436372" name="initialize" parent="bridgeView" startPc="268436349">
+            <param id="recorder"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436411" name="onHide" parent="bridgeView" startPc="268436373">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436437" name="onUpdate" parent="bridgeView" startPc="268436412">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436611" name="onTimer" parent="bridgeView" startPc="268436438">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436635" name="onStart" parent="bridgeApp" startPc="268436612">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436702" name="getInitialView" parent="bridgeApp" startPc="268436636">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436746" name="initialize" parent="bridgeApp" startPc="268436703">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436796" name="onStop" parent="bridgeApp" startPc="268436747">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436804" name="isRecording" parent="AccelRecorder" startPc="268436797">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436991" name="startRecording" parent="AccelRecorder" startPc="268436805">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437035" name="initialize" parent="AccelRecorder" startPc="268436992">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437104" name="saveRecording" parent="AccelRecorder" startPc="268437036">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437182" name="stopRecording" parent="AccelRecorder" startPc="268437105">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437397" name="MainLayout" parent="Layouts" startPc="268437183">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437409" name="&lt;init&gt;" parent="MainMenu" startPc="268437398">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437514" name="initialize" parent="MainMenu" startPc="268437410">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

@@ -1,0 +1,1735 @@
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 13; @symbol_functiondef = [MainLayout,13,17,27]; @symbol_param<0> = [dc,13,28,30]; @symbol_param<0>_type<0> = [Graphics,13,34,42]; @symbol_param<0>_type<1> = [Dc,13,43,45]; @symbol_return<0> = [Array,13,50,55]; @symbol_return<1> = [WatchUi,13,56,63]; @symbol_return<2> = [Drawable,13,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_13_74_19_8_start:
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_13_74_19_8_start" "_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_13_74_19_8_stop" ]
+            %rez_cmp_local_text_statusText.1 = local;
+            symbol [ rez_cmp_local_text_statusText %rez_cmp_local_text_statusText.1 14 16 45 ];
+            symbol [ WatchUi %tmp.3 14 52 59 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.4 14 60 64 ];
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 7;
+            %tmp.7 = const :identifier;
+            symbol [ identifier %tmp.7 14 67 77 const ];
+            %tmp.8 = "statusText";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            symbol [ color %tmp.12 14 94 99 const ];
+            symbol [ Graphics %tmp.13 14 101 109 ];
+            %tmp.13 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.14 14 110 121 ];
+            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            symbol [ locX %tmp.18 14 124 128 const ];
+            %tmp.19 = 280;
+            %tmp.20 = 0.5;
+            %tmp.21 = mul %tmp.19 %tmp.20;
+            %tmp.22 = dup %tmp.16;
+            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
+            %tmp.25 = const :locY;
+            symbol [ locY %tmp.25 14 144 148 const ];
+            %tmp.26 = 280;
+            %tmp.27 = 30;
+            %tmp.28 = 100.0;
+            %tmp.29 = div %tmp.27 %tmp.28;
+            %tmp.30 = mul %tmp.26 %tmp.29;
+            %tmp.31 = dup %tmp.23;
+            %tmp.32 = aputv %tmp.31 %tmp.25 %tmp.30;
+            %tmp.34 = const :text;
+            symbol [ text %tmp.34 14 173 177 const ];
+            %tmp.35 = "Initializing...";
+            %tmp.36 = dup %tmp.32;
+            %tmp.37 = aputv %tmp.36 %tmp.34 %tmp.35;
+            %tmp.39 = const :justification;
+            symbol [ justification %tmp.39 14 199 212 const ];
+            symbol [ Graphics %tmp.40 14 214 222 ];
+            %tmp.40 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.41 14 223 242 ];
+            %tmp.41 = getv %tmp.40 :TEXT_JUSTIFY_CENTER;
+            %tmp.42 = dup %tmp.37;
+            %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
+            %tmp.45 = const :font;
+            symbol [ font %tmp.45 14 245 249 const ];
+            symbol [ Graphics %tmp.46 14 251 259 ];
+            %tmp.46 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.47 14 260 269 ];
+            %tmp.47 = getv %tmp.46 :FONT_TINY;
+            %tmp.48 = dup %tmp.43;
+            %tmp.49 = aputv %tmp.48 %tmp.45 %tmp.47;
+            %tmp.1 = newc %tmp.4 (%tmp.49);
+            lputv %rez_cmp_local_text_statusText.1 %tmp.1;
+            symbol [ rez_cmp_local_text_statusText %rez_cmp_local_text_statusText.1 14 16 45 ];
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 16 12 ]
+            [ "_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_13_74_19_8_start" "_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_13_74_19_8_stop" ]
+            %rez_cmp_local_text_1193959466.2 = local;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 16 16 45 ];
+            symbol [ WatchUi %tmp.52 16 52 59 ];
+            %tmp.52 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.53 16 60 64 ];
+            %tmp.53 = getv function ? %tmp.52 :Text;
+            %tmp.54 = newd 6;
+            %tmp.56 = const :color;
+            symbol [ color %tmp.56 16 67 72 const ];
+            symbol [ Graphics %tmp.57 16 74 82 ];
+            %tmp.57 = getm $.Toybox.Graphics;
+            symbol [ COLOR_LT_GRAY %tmp.58 16 83 96 ];
+            %tmp.58 = getv %tmp.57 :COLOR_LT_GRAY;
+            %tmp.59 = dup %tmp.54;
+            %tmp.60 = aputv %tmp.59 %tmp.56 %tmp.58;
+            %tmp.62 = const :locX;
+            symbol [ locX %tmp.62 16 99 103 const ];
+            %tmp.63 = 280;
+            %tmp.64 = 0.5;
+            %tmp.65 = mul %tmp.63 %tmp.64;
+            %tmp.66 = dup %tmp.60;
+            %tmp.67 = aputv %tmp.66 %tmp.62 %tmp.65;
+            %tmp.69 = const :locY;
+            symbol [ locY %tmp.69 16 119 123 const ];
+            %tmp.70 = 280;
+            %tmp.71 = 60;
+            %tmp.72 = 100.0;
+            %tmp.73 = div %tmp.71 %tmp.72;
+            %tmp.74 = mul %tmp.70 %tmp.73;
+            %tmp.75 = dup %tmp.67;
+            %tmp.76 = aputv %tmp.75 %tmp.69 %tmp.74;
+            %tmp.78 = const :text;
+            symbol [ text %tmp.78 16 148 152 const ];
+            %tmp.79 = "Menu/Select: Toggle Recording";
+            %tmp.80 = dup %tmp.76;
+            %tmp.81 = aputv %tmp.80 %tmp.78 %tmp.79;
+            %tmp.83 = const :justification;
+            symbol [ justification %tmp.83 16 188 201 const ];
+            symbol [ Graphics %tmp.84 16 203 211 ];
+            %tmp.84 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.85 16 212 231 ];
+            %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_CENTER;
+            %tmp.86 = dup %tmp.81;
+            %tmp.87 = aputv %tmp.86 %tmp.83 %tmp.85;
+            %tmp.89 = const :font;
+            symbol [ font %tmp.89 16 234 238 const ];
+            symbol [ Graphics %tmp.90 16 240 248 ];
+            %tmp.90 = getm $.Toybox.Graphics;
+            symbol [ FONT_TINY %tmp.91 16 249 258 ];
+            %tmp.91 = getv %tmp.90 :FONT_TINY;
+            %tmp.92 = dup %tmp.87;
+            %tmp.93 = aputv %tmp.92 %tmp.89 %tmp.91;
+            %tmp.50 = newc %tmp.53 (%tmp.93);
+            lputv %rez_cmp_local_text_1193959466.2 %tmp.50;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 16 16 45 ];
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 18 12 ]
+            %tmp.94 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.94 18 85 90 ];
+            symbol [ WatchUi %tmp.94 18 91 98 ];
+            symbol [ Drawable %tmp.94 18 99 107 ];
+            %tmp.95 = lgetv %rez_cmp_local_text_statusText.1;
+            symbol [ rez_cmp_local_text_statusText %tmp.95 18 20 49 ];
+            %tmp.96 = dup %tmp.94;
+            %tmp.97 = aputv %tmp.96 0 %tmp.95;
+            %tmp.98 = lgetv %rez_cmp_local_text_1193959466.2;
+            symbol [ rez_cmp_local_text_1193959466 %tmp.98 18 51 80 ];
+            %tmp.99 = dup %tmp.97;
+            %tmp.100 = aputv %tmp.99 1 %tmp.98;
+            ret %tmp.100;
+_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_13_74_19_8_stop:
+        }
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 22; @symbol_moduledef = [Menus,22,11,16]; ]
+    module Menus {
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 22; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 23; @symbol_classdef = [MainMenu,23,14,22]; @symbol_extends<0> = [WatchUi,23,31,38]; @symbol_extends<1> = [Menu,23,39,43]; ]
+        class MainMenu extends WatchUi.Menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 23; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 23; ]
+            static
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 24; @symbol_functiondef = [initialize,24,21,31]; ]
+            function initialize() as Void {
+_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_24_34_28_12_start:
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 25 16 ]
+                symbol [ Menu %tmp.2 25 16 20 ];
+                %tmp.2 = getv ? :Menu;
+                symbol [ initialize %tmp.3 25 21 31 ];
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 26 16 ]
+                %tmp.4 = self;
+                symbol [ addItem %tmp.5 26 16 23 ];
+                %tmp.5 = getv function %tmp.4 :addItem;
+                symbol [ WatchUi %tmp.6 26 25 32 ];
+                %tmp.6 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.7 26 33 45 ];
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                symbol [ $ %tmp.8 26 46 47 ];
+                %tmp.8 = getm $;
+                symbol [ Rez %tmp.9 26 48 51 ];
+                %tmp.9 = getv %tmp.8 :Rez;
+                symbol [ Strings %tmp.10 26 52 59 ];
+                %tmp.10 = getv %tmp.9 :Strings;
+                symbol [ menu_label_1 %tmp.11 26 60 72 ];
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                symbol [ String %tmp.13 26 77 83 ];
+                %tmp.15 = const :item_1;
+                symbol [ item_1 %tmp.15 26 87 93 const ];
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 27 16 ]
+                %tmp.16 = self;
+                symbol [ addItem %tmp.17 27 16 23 ];
+                %tmp.17 = getv function %tmp.16 :addItem;
+                symbol [ WatchUi %tmp.18 27 25 32 ];
+                %tmp.18 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.19 27 33 45 ];
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                symbol [ $ %tmp.20 27 46 47 ];
+                %tmp.20 = getm $;
+                symbol [ Rez %tmp.21 27 48 51 ];
+                %tmp.21 = getv %tmp.20 :Rez;
+                symbol [ Strings %tmp.22 27 52 59 ];
+                %tmp.22 = getv %tmp.21 :Strings;
+                symbol [ menu_label_2 %tmp.23 27 60 72 ];
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                symbol [ String %tmp.25 27 77 83 ];
+                %tmp.27 = const :item_2;
+                symbol [ item_2 %tmp.27 27 87 93 const ];
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+_Users_kuba_projects_garmin_garmin_bridge_bridge_builds_00_enduro3_gen_006_B4575_00_source_Rez_mcgen_24_34_28_12_stop:
+            }
+        }
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 32; @symbol_moduledef = [Strings,32,11,18]; ]
+    module Strings {
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 32; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 33; @position = 27; initialized = true; @symbol_vardef = [menu_label_1,33,27,39]; @symbol_type<0> = [ResourceId,33,43,53]; ]
+        var menu_label_1 as ResourceId;
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 34; @position = 27; initialized = true; @symbol_vardef = [menu_label_2,34,27,39]; @symbol_type<0> = [ResourceId,34,43,53]; ]
+        var menu_label_2 as ResourceId;
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 35; @position = 27; initialized = true; @symbol_vardef = [prompt,35,27,33]; @symbol_type<0> = [ResourceId,35,37,47]; ]
+        var prompt as ResourceId;
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 36; @position = 27; initialized = true; @symbol_vardef = [AppName,36,27,34]; @symbol_type<0> = [ResourceId,36,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 39; @symbol_moduledef = [Styles,39,11,17]; ]
+    module Styles {
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 39; ]
+        <init> {
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 40; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,40,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 40; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 41 18 ]
+                symbol [ Graphics %tmp.28 41 34 42 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.29 41 43 62 ];
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.30 41 63 71 ];
+                %tmp.30 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.31 41 72 92 ];
+                %tmp.31 = getv %tmp.30 :TEXT_JUSTIFY_VCENTER;
+                %tmp.32 = bitor %tmp.29 %tmp.31;
+                putv self :justification %tmp.32;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 42 18 ]
+                symbol [ Graphics %tmp.33 42 25 33 ];
+                %tmp.33 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.34 42 34 43 ];
+                %tmp.34 = getv %tmp.33 :FONT_TINY;
+                putv self :font %tmp.34;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 41; @position = 18; @symbol_constdef = [justification,41,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 42; @position = 18; @symbol_constdef = [font,42,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 45; @symbol_moduledef = [system_size__menu_header,45,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 45; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [width,46,18,23]; @symbol_type<0> = [Number,46,27,33]; ]
+            const width as Number = 280;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [height,47,18,24]; @symbol_type<0> = [Number,47,28,34]; ]
+            const height as Number = 95;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 50; @symbol_moduledef = [system_loc__hint_button_left_bottom,50,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 50; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [x,51,18,19]; @symbol_type<0> = [Number,51,23,29]; ]
+            const x as Number = 7;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [y,52,18,19]; @symbol_type<0> = [Number,52,23,29]; ]
+            const y as Number = 179;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 55; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,55,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 55; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 56 18 ]
+                symbol [ Graphics %tmp.35 56 34 42 ];
+                %tmp.35 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.36 56 43 62 ];
+                %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.37 56 63 71 ];
+                %tmp.37 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.38 56 72 92 ];
+                %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_VCENTER;
+                %tmp.39 = bitor %tmp.36 %tmp.38;
+                putv self :justification %tmp.39;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 57 18 ]
+                symbol [ Graphics %tmp.40 57 25 33 ];
+                %tmp.40 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.41 57 34 43 ];
+                %tmp.41 = getv %tmp.40 :FONT_TINY;
+                putv self :font %tmp.41;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [justification,56,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [font,57,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 60; @symbol_moduledef = [prompt_loc__body_no_title,60,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 60; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [x,61,18,19]; @symbol_type<0> = [Number,61,23,29]; ]
+            const x as Number = 28;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [y,62,18,19]; @symbol_type<0> = [Number,62,23,29]; ]
+            const y as Number = 28;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 65; @symbol_moduledef = [system_icon_dark__about,65,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [filename,66,18,26]; @symbol_type<0> = [String,66,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__about.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [compress,67,18,26]; @symbol_type<0> = [String,67,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [dithering,68,18,27]; @symbol_type<0> = [String,68,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [automaticPalette,69,18,34]; @symbol_type<0> = [String,69,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 72; @symbol_moduledef = [system_icon_light__question,72,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 72; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [filename,73,18,26]; @symbol_type<0> = [String,73,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__question.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [dithering,74,18,27]; @symbol_type<0> = [String,74,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 77; @symbol_moduledef = [system_loc__hint_button_left_top,77,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 77; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [exclude,78,18,25]; @symbol_type<0> = [Boolean,78,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 81; @symbol_moduledef = [prompt_font__title,81,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 81; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 82 18 ]
+                symbol [ Graphics %tmp.42 82 34 42 ];
+                %tmp.42 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.43 82 43 62 ];
+                %tmp.43 = getv %tmp.42 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.44 82 63 71 ];
+                %tmp.44 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.45 82 72 92 ];
+                %tmp.45 = getv %tmp.44 :TEXT_JUSTIFY_VCENTER;
+                %tmp.46 = bitor %tmp.43 %tmp.45;
+                putv self :justification %tmp.46;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 83 18 ]
+                symbol [ Graphics %tmp.47 83 25 33 ];
+                %tmp.47 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.48 83 34 43 ];
+                %tmp.48 = getv %tmp.47 :FONT_TINY;
+                putv self :font %tmp.48;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [justification,82,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 83; @position = 18; @symbol_constdef = [font,83,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 86; @symbol_moduledef = [system_icon_dark__discard,86,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 86; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [filename,87,18,26]; @symbol_type<0> = [String,87,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__discard.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 88; @position = 18; @symbol_constdef = [compress,88,18,26]; @symbol_type<0> = [String,88,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [dithering,89,18,27]; @symbol_type<0> = [String,89,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [automaticPalette,90,18,34]; @symbol_type<0> = [String,90,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 93; @symbol_moduledef = [system_size__menu_item,93,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 93; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [width,94,18,23]; @symbol_type<0> = [Number,94,27,33]; ]
+            const width as Number = 280;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [height,95,18,24]; @symbol_type<0> = [Number,95,28,34]; ]
+            const height as Number = 89;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 98; @symbol_moduledef = [system_color_dark__text,98,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 98; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 100 18 ]
+                symbol [ Graphics %tmp.49 100 31 39 ];
+                %tmp.49 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.50 100 40 57 ];
+                %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+                putv self :background %tmp.50;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [color,99,18,23]; @symbol_type<0> = [Number,99,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 100; @position = 18; @symbol_constdef = [background,100,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 103; @symbol_moduledef = [system_icon_destructive__discard,103,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 103; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [filename,104,18,26]; @symbol_type<0> = [String,104,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__discard.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 105; @position = 18; @symbol_constdef = [dithering,105,18,27]; @symbol_type<0> = [String,105,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 108; @symbol_moduledef = [system_icon_dark__hint_action_menu,108,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 108; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [filename,109,18,26]; @symbol_type<0> = [String,109,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 110; @position = 18; @symbol_constdef = [dithering,110,18,27]; @symbol_type<0> = [String,110,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 113; @symbol_moduledef = [prompt_size__title,113,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 113; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [width,114,18,23]; @symbol_type<0> = [Number,114,27,33]; ]
+            const width as Number = 224;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [height,115,18,24]; @symbol_type<0> = [Number,115,28,34]; ]
+            const height as Number = 42;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 118; @symbol_moduledef = [confirmation_font__body,118,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 118; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 119 18 ]
+                symbol [ Graphics %tmp.51 119 34 42 ];
+                %tmp.51 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.52 119 43 62 ];
+                %tmp.52 = getv %tmp.51 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.53 119 63 71 ];
+                %tmp.53 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.54 119 72 92 ];
+                %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_VCENTER;
+                %tmp.55 = bitor %tmp.52 %tmp.54;
+                putv self :justification %tmp.55;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 120 18 ]
+                symbol [ Graphics %tmp.56 120 25 33 ];
+                %tmp.56 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.57 120 34 43 ];
+                %tmp.57 = getv %tmp.56 :FONT_TINY;
+                putv self :font %tmp.57;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [justification,119,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [font,120,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 123; @symbol_moduledef = [system_color_dark__background,123,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 123; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [color,124,18,23]; @symbol_type<0> = [Number,124,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [background,125,18,28]; @symbol_type<0> = [Number,125,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 128; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,128,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 128; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [filename,129,18,26]; @symbol_type<0> = [String,129,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [dithering,130,18,27]; @symbol_type<0> = [String,130,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 133; @symbol_moduledef = [system_size__launch_icon,133,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 133; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [scaleX,134,18,24]; @symbol_type<0> = [Number,134,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [scaleY,135,18,24]; @symbol_type<0> = [Number,135,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 136; @position = 18; @symbol_constdef = [scaleRelativeTo,136,18,33]; @symbol_type<0> = [String,136,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 139; @symbol_moduledef = [confirmation_input__confirm,139,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 139; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 140 18 ]
+                symbol [ WatchUi %tmp.58 140 27 34 ];
+                %tmp.58 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.59 140 35 44 ];
+                %tmp.59 = getv %tmp.58 :KEY_ENTER;
+                putv self :button %tmp.59;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [button,140,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 143; @symbol_moduledef = [prompt_font__body_with_title,143,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 143; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 144 18 ]
+                symbol [ Graphics %tmp.60 144 34 42 ];
+                %tmp.60 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.61 144 43 62 ];
+                %tmp.61 = getv %tmp.60 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.61;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 145 18 ]
+                symbol [ Graphics %tmp.62 145 25 33 ];
+                %tmp.62 = getm $.Toybox.Graphics;
+                symbol [ FONT_GLANCE %tmp.63 145 34 45 ];
+                %tmp.63 = getv %tmp.62 :FONT_GLANCE;
+                putv self :font %tmp.63;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [justification,144,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [font,145,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 148; @symbol_moduledef = [confirmation_loc__body,148,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 148; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [x,149,18,19]; @symbol_type<0> = [Number,149,23,29]; ]
+            const x as Number = 56;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [y,150,18,19]; @symbol_type<0> = [Number,150,23,29]; ]
+            const y as Number = 56;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 153; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,153,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 153; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [filename,154,18,26]; @symbol_type<0> = [String,154,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [dithering,155,18,27]; @symbol_type<0> = [String,155,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 158; @symbol_moduledef = [prompt_color_dark__background,158,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 158; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [color,159,18,23]; @symbol_type<0> = [Number,159,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [background,160,18,28]; @symbol_type<0> = [Number,160,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 163; @symbol_moduledef = [system_icon_destructive__hint_action_menu,163,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 163; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [filename,164,18,26]; @symbol_type<0> = [String,164,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [dithering,165,18,27]; @symbol_type<0> = [String,165,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 168; @symbol_moduledef = [system_loc__hint_action_menu,168,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 168; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [x,169,18,19]; @symbol_type<0> = [Number,169,23,29]; ]
+            const x as Number = 222;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [y,170,18,19]; @symbol_type<0> = [Number,170,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 173; @symbol_moduledef = [confirmation_icon__hint_confirm,173,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 174; @position = 18; @symbol_constdef = [filename,174,18,26]; @symbol_type<0> = [String,174,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [dithering,175,18,27]; @symbol_type<0> = [String,175,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 178; @symbol_moduledef = [system_loc__hint_button_left_middle,178,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 178; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 179; @position = 18; @symbol_constdef = [x,179,18,19]; @symbol_type<0> = [Number,179,23,29]; ]
+            const x as Number = 0;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [y,180,18,19]; @symbol_type<0> = [Number,180,23,29]; ]
+            const y as Number = 110;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 183; @symbol_moduledef = [prompt_size__body_no_title,183,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 183; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [width,184,18,23]; @symbol_type<0> = [Number,184,27,33]; ]
+            const width as Number = 224;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [height,185,18,24]; @symbol_type<0> = [Number,185,28,34]; ]
+            const height as Number = 224;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 188; @symbol_moduledef = [system_icon_light__hint_button_left_top,188,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 188; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [filename,189,18,26]; @symbol_type<0> = [String,189,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [dithering,190,18,27]; @symbol_type<0> = [String,190,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 193; @symbol_moduledef = [prompt_color_light__background,193,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 193; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [color,194,18,23]; @symbol_type<0> = [Number,194,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [background,195,18,28]; @symbol_type<0> = [Number,195,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 198; @symbol_moduledef = [confirmation_input__delete,198,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 198; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 199 18 ]
+                symbol [ WatchUi %tmp.64 199 27 34 ];
+                %tmp.64 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.65 199 35 44 ];
+                %tmp.65 = getv %tmp.64 :KEY_ENTER;
+                putv self :button %tmp.65;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [button,199,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 202; @symbol_moduledef = [system_icon_dark__hint_button_left_top,202,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [filename,203,18,26]; @symbol_type<0> = [String,203,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [dithering,204,18,27]; @symbol_type<0> = [String,204,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 207; @symbol_moduledef = [system_input__action_menu,207,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 207; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 208 18 ]
+                symbol [ WatchUi %tmp.66 208 27 34 ];
+                %tmp.66 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.67 208 35 44 ];
+                %tmp.67 = getv %tmp.66 :KEY_ENTER;
+                putv self :button %tmp.67;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [button,208,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 211; @symbol_moduledef = [system_icon_light__save,211,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 211; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [filename,212,18,26]; @symbol_type<0> = [String,212,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__save.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [dithering,213,18,27]; @symbol_type<0> = [String,213,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 216; @symbol_moduledef = [prompt_color_light__body,216,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 216; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 218 18 ]
+                symbol [ Graphics %tmp.68 218 31 39 ];
+                %tmp.68 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.69 218 40 57 ];
+                %tmp.69 = getv %tmp.68 :COLOR_TRANSPARENT;
+                putv self :background %tmp.69;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [color,217,18,23]; @symbol_type<0> = [Number,217,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [background,218,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 221; @symbol_moduledef = [system_loc__subwindow,221,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 221; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [exclude,222,18,25]; @symbol_type<0> = [Boolean,222,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 225; @symbol_moduledef = [system_icon_light__warning,225,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [filename,226,18,26]; @symbol_type<0> = [String,226,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__warning.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [dithering,227,18,27]; @symbol_type<0> = [String,227,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 230; @symbol_moduledef = [confirmation_color_light__body,230,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 230; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 232 18 ]
+                symbol [ Graphics %tmp.70 232 31 39 ];
+                %tmp.70 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.71 232 40 57 ];
+                %tmp.71 = getv %tmp.70 :COLOR_TRANSPARENT;
+                putv self :background %tmp.71;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 231; @position = 18; @symbol_constdef = [color,231,18,23]; @symbol_type<0> = [Number,231,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [background,232,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 235; @symbol_moduledef = [confirmation_icon_light__hint_keep,235,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 235; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [filename,236,18,26]; @symbol_type<0> = [String,236,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [dithering,237,18,27]; @symbol_type<0> = [String,237,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 240; @symbol_moduledef = [activity_color_light__background,240,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [color,241,18,23]; @symbol_type<0> = [Number,241,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 242; @position = 18; @symbol_constdef = [background,242,18,28]; @symbol_type<0> = [Number,242,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 245; @symbol_moduledef = [system_icon_positive__hint_button_right_top,245,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 245; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [filename,246,18,26]; @symbol_type<0> = [String,246,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [dithering,247,18,27]; @symbol_type<0> = [String,247,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 250; @symbol_moduledef = [system_size__screen,250,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 250; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [width,251,18,23]; @symbol_type<0> = [Number,251,27,33]; ]
+            const width as Number = 280;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 252; @position = 18; @symbol_constdef = [height,252,18,24]; @symbol_type<0> = [Number,252,28,34]; ]
+            const height as Number = 280;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 255; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,255,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [filename,256,18,26]; @symbol_type<0> = [String,256,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [dithering,257,18,27]; @symbol_type<0> = [String,257,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 260; @symbol_moduledef = [system_color_light__background,260,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 260; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [color,261,18,23]; @symbol_type<0> = [Number,261,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [background,262,18,28]; @symbol_type<0> = [Number,262,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 265; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,265,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 265; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [filename,266,18,26]; @symbol_type<0> = [String,266,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [dithering,267,18,27]; @symbol_type<0> = [String,267,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 270; @symbol_moduledef = [confirmation_loc__hint_confirm,270,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 270; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [x,271,18,19]; @symbol_type<0> = [Number,271,23,29]; ]
+            const x as Number = 222;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 272; @position = 18; @symbol_constdef = [y,272,18,19]; @symbol_type<0> = [Number,272,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 275; @symbol_moduledef = [activity_color_dark__text,275,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 275; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 277 18 ]
+                symbol [ Graphics %tmp.72 277 31 39 ];
+                %tmp.72 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.73 277 40 57 ];
+                %tmp.73 = getv %tmp.72 :COLOR_TRANSPARENT;
+                putv self :background %tmp.73;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [color,276,18,23]; @symbol_type<0> = [Number,276,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [background,277,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 280; @symbol_moduledef = [confirmation_input__keep,280,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 280; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 281 18 ]
+                symbol [ WatchUi %tmp.74 281 27 34 ];
+                %tmp.74 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.75 281 35 43 ];
+                %tmp.75 = getv %tmp.74 :KEY_DOWN;
+                putv self :button %tmp.75;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [button,281,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 284; @symbol_moduledef = [prompt_loc__body_with_title,284,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 284; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [x,285,18,19]; @symbol_type<0> = [Number,285,23,29]; ]
+            const x as Number = 28;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [y,286,18,19]; @symbol_type<0> = [Number,286,23,29]; ]
+            const y as Number = 84;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 289; @symbol_moduledef = [system_icon_dark__search,289,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 289; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [filename,290,18,26]; @symbol_type<0> = [String,290,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__search.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 291; @position = 18; @symbol_constdef = [compress,291,18,26]; @symbol_type<0> = [String,291,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [dithering,292,18,27]; @symbol_type<0> = [String,292,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [automaticPalette,293,18,34]; @symbol_type<0> = [String,293,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 296; @symbol_moduledef = [activity_color_light__text,296,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 296; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 298 18 ]
+                symbol [ Graphics %tmp.76 298 31 39 ];
+                %tmp.76 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.77 298 40 57 ];
+                %tmp.77 = getv %tmp.76 :COLOR_TRANSPARENT;
+                putv self :background %tmp.77;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 297; @position = 18; @symbol_constdef = [color,297,18,23]; @symbol_type<0> = [Number,297,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [background,298,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 301; @symbol_moduledef = [confirmation_icon__hint_keep,301,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 301; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [filename,302,18,26]; @symbol_type<0> = [String,302,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [dithering,303,18,27]; @symbol_type<0> = [String,303,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 306; @symbol_moduledef = [system_icon_dark__save,306,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [filename,307,18,26]; @symbol_type<0> = [String,307,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__save.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [compress,308,18,26]; @symbol_type<0> = [String,308,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [dithering,309,18,27]; @symbol_type<0> = [String,309,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [automaticPalette,310,18,34]; @symbol_type<0> = [String,310,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 313; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,313,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [filename,314,18,26]; @symbol_type<0> = [String,314,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [dithering,315,18,27]; @symbol_type<0> = [String,315,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 318; @symbol_moduledef = [system_icon_light__search,318,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [filename,319,18,26]; @symbol_type<0> = [String,319,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__search.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [dithering,320,18,27]; @symbol_type<0> = [String,320,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 323; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,323,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [filename,324,18,26]; @symbol_type<0> = [String,324,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [dithering,325,18,27]; @symbol_type<0> = [String,325,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 328; @symbol_moduledef = [system_icon_positive__hint_button_left_top,328,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 328; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [filename,329,18,26]; @symbol_type<0> = [String,329,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__hint_button_left_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [dithering,330,18,27]; @symbol_type<0> = [String,330,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 333; @symbol_moduledef = [system_loc__hint_button_right_bottom,333,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 333; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [x,334,18,19]; @symbol_type<0> = [Number,334,23,29]; ]
+            const x as Number = 222;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [y,335,18,19]; @symbol_type<0> = [Number,335,23,29]; ]
+            const y as Number = 178;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 338; @symbol_moduledef = [confirmation_icon_dark__hint_reject,338,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 338; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [filename,339,18,26]; @symbol_type<0> = [String,339,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [dithering,340,18,27]; @symbol_type<0> = [String,340,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 343; @symbol_moduledef = [confirmation_color_dark__body,343,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 343; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 345 18 ]
+                symbol [ Graphics %tmp.78 345 31 39 ];
+                %tmp.78 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.79 345 40 57 ];
+                %tmp.79 = getv %tmp.78 :COLOR_TRANSPARENT;
+                putv self :background %tmp.79;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [color,344,18,23]; @symbol_type<0> = [Number,344,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [background,345,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 348; @symbol_moduledef = [confirmation_icon_light__hint_confirm,348,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 348; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [filename,349,18,26]; @symbol_type<0> = [String,349,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [dithering,350,18,27]; @symbol_type<0> = [String,350,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 353; @symbol_moduledef = [prompt_color_dark__title,353,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 353; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 355 18 ]
+                symbol [ Graphics %tmp.80 355 31 39 ];
+                %tmp.80 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.81 355 40 57 ];
+                %tmp.81 = getv %tmp.80 :COLOR_TRANSPARENT;
+                putv self :background %tmp.81;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [color,354,18,23]; @symbol_type<0> = [Number,354,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [background,355,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 358; @symbol_moduledef = [system_icon_destructive__cancel,358,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 358; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [filename,359,18,26]; @symbol_type<0> = [String,359,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 360; @position = 18; @symbol_constdef = [dithering,360,18,27]; @symbol_type<0> = [String,360,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 363; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,363,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 363; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [filename,364,18,26]; @symbol_type<0> = [String,364,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [dithering,365,18,27]; @symbol_type<0> = [String,365,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 368; @symbol_moduledef = [prompt_loc__title,368,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 368; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [x,369,18,19]; @symbol_type<0> = [Number,369,23,29]; ]
+            const x as Number = 28;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [y,370,18,19]; @symbol_type<0> = [Number,370,23,29]; ]
+            const y as Number = 21;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 373; @symbol_moduledef = [confirmation_font_enhanced_readability__body,373,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 373; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 374 18 ]
+                symbol [ Graphics %tmp.82 374 34 42 ];
+                %tmp.82 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.83 374 43 62 ];
+                %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.84 374 63 71 ];
+                %tmp.84 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.85 374 72 92 ];
+                %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_VCENTER;
+                %tmp.86 = bitor %tmp.83 %tmp.85;
+                putv self :justification %tmp.86;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 375 18 ]
+                symbol [ Graphics %tmp.87 375 25 33 ];
+                %tmp.87 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.88 375 34 44 ];
+                %tmp.88 = getv %tmp.87 :FONT_SMALL;
+                putv self :font %tmp.88;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [justification,374,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [font,375,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 378; @symbol_moduledef = [prompt_color_light__title,378,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 378; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 380 18 ]
+                symbol [ Graphics %tmp.89 380 31 39 ];
+                %tmp.89 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.90 380 40 57 ];
+                %tmp.90 = getv %tmp.89 :COLOR_TRANSPARENT;
+                putv self :background %tmp.90;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [color,379,18,23]; @symbol_type<0> = [Number,379,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [background,380,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 383; @symbol_moduledef = [system_icon_dark__hint_button_right_top,383,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 383; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 384; @position = 18; @symbol_constdef = [filename,384,18,26]; @symbol_type<0> = [String,384,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [dithering,385,18,27]; @symbol_type<0> = [String,385,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 388; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,388,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 388; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [filename,389,18,26]; @symbol_type<0> = [String,389,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 390; @position = 18; @symbol_constdef = [dithering,390,18,27]; @symbol_type<0> = [String,390,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 393; @symbol_moduledef = [confirmation_icon_dark__hint_keep,393,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 393; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [filename,394,18,26]; @symbol_type<0> = [String,394,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 395; @position = 18; @symbol_constdef = [dithering,395,18,27]; @symbol_type<0> = [String,395,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 398; @symbol_moduledef = [system_icon_light__cancel,398,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 398; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [filename,399,18,26]; @symbol_type<0> = [String,399,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__cancel.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [dithering,400,18,27]; @symbol_type<0> = [String,400,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 403; @symbol_moduledef = [confirmation_icon_light__hint_reject,403,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 403; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [filename,404,18,26]; @symbol_type<0> = [String,404,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [dithering,405,18,27]; @symbol_type<0> = [String,405,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 408; @symbol_moduledef = [system_icon_light__about,408,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [filename,409,18,26]; @symbol_type<0> = [String,409,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__about.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [dithering,410,18,27]; @symbol_type<0> = [String,410,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 413; @symbol_moduledef = [system_size__toast_icon,413,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 413; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [scaleX,414,18,24]; @symbol_type<0> = [Number,414,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [scaleY,415,18,24]; @symbol_type<0> = [Number,415,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [scaleRelativeTo,416,18,33]; @symbol_type<0> = [String,416,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 419; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,419,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 419; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 420; @position = 18; @symbol_constdef = [exclude,420,18,25]; @symbol_type<0> = [Boolean,420,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 423; @symbol_moduledef = [confirmation_icon__hint_reject,423,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 423; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [filename,424,18,26]; @symbol_type<0> = [String,424,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [dithering,425,18,27]; @symbol_type<0> = [String,425,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 428; @symbol_moduledef = [system_icon_light__hint_action_menu,428,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [filename,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [dithering,430,18,27]; @symbol_type<0> = [String,430,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 433; @symbol_moduledef = [system_icon_light__hint_button_right_middle,433,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 433; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 434; @position = 18; @symbol_constdef = [exclude,434,18,25]; @symbol_type<0> = [Boolean,434,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 437; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,437,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 437; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 438; @position = 18; @symbol_constdef = [exclude,438,18,25]; @symbol_type<0> = [Boolean,438,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 441; @symbol_moduledef = [confirmation_loc__hint_reject,441,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [x,442,18,19]; @symbol_type<0> = [Number,442,23,29]; ]
+            const x as Number = 7;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [y,443,18,19]; @symbol_type<0> = [Number,443,23,29]; ]
+            const y as Number = 179;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [horizontalJustification,444,18,41]; @symbol_type<0> = [String,444,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 447; @symbol_moduledef = [confirmation_icon_dark__hint_delete,447,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 447; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [filename,448,18,26]; @symbol_type<0> = [String,448,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [dithering,449,18,27]; @symbol_type<0> = [String,449,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 452; @symbol_moduledef = [activity_color_dark__background,452,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [color,453,18,23]; @symbol_type<0> = [Number,453,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [background,454,18,28]; @symbol_type<0> = [Number,454,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 457; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,457,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 457; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 458; @position = 18; @symbol_constdef = [filename,458,18,26]; @symbol_type<0> = [String,458,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [dithering,459,18,27]; @symbol_type<0> = [String,459,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 462; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,462,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 462; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 463; @position = 18; @symbol_constdef = [filename,463,18,26]; @symbol_type<0> = [String,463,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [dithering,464,18,27]; @symbol_type<0> = [String,464,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 467; @symbol_moduledef = [system_size__menu_icon,467,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 467; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [scaleX,468,18,24]; @symbol_type<0> = [Number,468,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [scaleY,469,18,24]; @symbol_type<0> = [Number,469,28,34]; ]
+            const scaleY as Number = 76;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [scaleRelativeTo,470,18,33]; @symbol_type<0> = [String,470,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 473; @symbol_moduledef = [system_icon_destructive__warning,473,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 473; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [filename,474,18,26]; @symbol_type<0> = [String,474,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_destructive__warning.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [dithering,475,18,27]; @symbol_type<0> = [String,475,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 478; @symbol_moduledef = [system_loc__hint_button_right_middle,478,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [exclude,479,18,25]; @symbol_type<0> = [Boolean,479,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 482; @symbol_moduledef = [system_icon_dark__cancel,482,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 482; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [filename,483,18,26]; @symbol_type<0> = [String,483,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__cancel.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [compress,484,18,26]; @symbol_type<0> = [String,484,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [dithering,485,18,27]; @symbol_type<0> = [String,485,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [automaticPalette,486,18,34]; @symbol_type<0> = [String,486,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 489; @symbol_moduledef = [prompt_size__body_with_title,489,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [width,490,18,23]; @symbol_type<0> = [Number,490,27,33]; ]
+            const width as Number = 224;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [height,491,18,24]; @symbol_type<0> = [Number,491,28,34]; ]
+            const height as Number = 168;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 494; @symbol_moduledef = [system_loc__hint_button_right_top,494,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 494; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 495; @position = 18; @symbol_constdef = [x,495,18,19]; @symbol_type<0> = [Number,495,23,29]; ]
+            const x as Number = 222;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [y,496,18,19]; @symbol_type<0> = [Number,496,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 499; @symbol_moduledef = [system_color_light__text,499,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 499; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 501 18 ]
+                symbol [ Graphics %tmp.91 501 31 39 ];
+                %tmp.91 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.92 501 40 57 ];
+                %tmp.92 = getv %tmp.91 :COLOR_TRANSPARENT;
+                putv self :background %tmp.92;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [color,500,18,23]; @symbol_type<0> = [Number,500,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [background,501,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 504; @symbol_moduledef = [system_icon_light__check,504,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 504; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [filename,505,18,26]; @symbol_type<0> = [String,505,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__check.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [dithering,506,18,27]; @symbol_type<0> = [String,506,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 509; @symbol_moduledef = [confirmation_input__reject,509,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 509; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 510 18 ]
+                symbol [ WatchUi %tmp.93 510 27 34 ];
+                %tmp.93 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.94 510 35 43 ];
+                %tmp.94 = getv %tmp.93 :KEY_DOWN;
+                putv self :button %tmp.94;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [button,510,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 513; @symbol_moduledef = [system_icon_light__revert,513,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 513; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [filename,514,18,26]; @symbol_type<0> = [String,514,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__revert.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [dithering,515,18,27]; @symbol_type<0> = [String,515,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 518; @symbol_moduledef = [system_size__subwindow,518,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 518; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 519; @position = 18; @symbol_constdef = [exclude,519,18,25]; @symbol_type<0> = [Boolean,519,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 522; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,522,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 522; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [filename,523,18,26]; @symbol_type<0> = [String,523,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [dithering,524,18,27]; @symbol_type<0> = [String,524,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 527; @symbol_moduledef = [system_icon_dark__check,527,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [filename,528,18,26]; @symbol_type<0> = [String,528,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__check.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [compress,529,18,26]; @symbol_type<0> = [String,529,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [dithering,530,18,27]; @symbol_type<0> = [String,530,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [automaticPalette,531,18,34]; @symbol_type<0> = [String,531,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 534; @symbol_moduledef = [confirmation_loc__hint_keep,534,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [x,535,18,19]; @symbol_type<0> = [Number,535,23,29]; ]
+            const x as Number = 7;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [y,536,18,19]; @symbol_type<0> = [Number,536,23,29]; ]
+            const y as Number = 179;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [horizontalJustification,537,18,41]; @symbol_type<0> = [String,537,45,51]; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 540; @symbol_moduledef = [confirmation_loc__hint_delete,540,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 540; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [x,541,18,19]; @symbol_type<0> = [Number,541,23,29]; ]
+            const x as Number = 222;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [y,542,18,19]; @symbol_type<0> = [Number,542,23,29]; ]
+            const y as Number = 44;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 545; @symbol_moduledef = [system_icon_positive__hint_action_menu,545,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 545; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [filename,546,18,26]; @symbol_type<0> = [String,546,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [dithering,547,18,27]; @symbol_type<0> = [String,547,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 550; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,550,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 550; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [exclude,551,18,25]; @symbol_type<0> = [Boolean,551,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 554; @symbol_moduledef = [system_icon_light__hint_button_left_middle,554,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 554; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [filename,555,18,26]; @symbol_type<0> = [String,555,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [dithering,556,18,27]; @symbol_type<0> = [String,556,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 559; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,559,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 559; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [filename,560,18,26]; @symbol_type<0> = [String,560,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [dithering,561,18,27]; @symbol_type<0> = [String,561,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 564; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,564,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 564; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [filename,565,18,26]; @symbol_type<0> = [String,565,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [dithering,566,18,27]; @symbol_type<0> = [String,566,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 569; @symbol_moduledef = [system_icon_dark__revert,569,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 569; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [filename,570,18,26]; @symbol_type<0> = [String,570,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__revert.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 571; @position = 18; @symbol_constdef = [compress,571,18,26]; @symbol_type<0> = [String,571,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [dithering,572,18,27]; @symbol_type<0> = [String,572,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [automaticPalette,573,18,34]; @symbol_type<0> = [String,573,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 576; @symbol_moduledef = [confirmation_icon_light__hint_delete,576,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 576; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [filename,577,18,26]; @symbol_type<0> = [String,577,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [dithering,578,18,27]; @symbol_type<0> = [String,578,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 581; @symbol_moduledef = [system_icon_dark__question,581,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 581; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [filename,582,18,26]; @symbol_type<0> = [String,582,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__question.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [compress,583,18,26]; @symbol_type<0> = [String,583,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [dithering,584,18,27]; @symbol_type<0> = [String,584,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [automaticPalette,585,18,34]; @symbol_type<0> = [String,585,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 588; @symbol_moduledef = [system_icon_light__discard,588,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [filename,589,18,26]; @symbol_type<0> = [String,589,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__discard.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 590; @position = 18; @symbol_constdef = [dithering,590,18,27]; @symbol_type<0> = [String,590,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 593; @symbol_moduledef = [device_info,593,15,26]; ]
+        module device_info {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 593; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 595 18 ]
+                symbol [ Toybox %tmp.96 595 32 38 ];
+                %tmp.96 = getv ? :Toybox;
+                symbol [ System %tmp.97 595 39 45 ];
+                %tmp.97 = getv %tmp.96 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.98 595 46 64 ];
+                %tmp.98 = getv %tmp.97 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.98;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [screenWidth,594,18,29]; @symbol_type<0> = [Number,594,33,39]; ]
+            const screenWidth as Number = 280;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 595; @position = 18; @symbol_constdef = [screenShape,595,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [hasNightMode,596,18,30]; @symbol_type<0> = [Boolean,596,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 597; @position = 18; @symbol_constdef = [hasGpu,597,18,24]; @symbol_type<0> = [Boolean,597,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [screenHeight,598,18,30]; @symbol_type<0> = [Number,598,34,40]; ]
+            const screenHeight as Number = 280;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [hasTouchScreen,599,18,32]; @symbol_type<0> = [Boolean,599,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,600,18,44]; @symbol_type<0> = [Boolean,600,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 603; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,603,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 603; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [filename,604,18,26]; @symbol_type<0> = [String,604,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [dithering,605,18,27]; @symbol_type<0> = [String,605,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 608; @symbol_moduledef = [prompt_font__body_no_title,608,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 608; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 609 18 ]
+                symbol [ Graphics %tmp.99 609 34 42 ];
+                %tmp.99 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.100 609 43 62 ];
+                %tmp.100 = getv %tmp.99 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.101 609 63 71 ];
+                %tmp.101 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.102 609 72 92 ];
+                %tmp.102 = getv %tmp.101 :TEXT_JUSTIFY_VCENTER;
+                %tmp.103 = bitor %tmp.100 %tmp.102;
+                putv self :justification %tmp.103;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 610 18 ]
+                symbol [ Graphics %tmp.104 610 25 33 ];
+                %tmp.104 = getm $.Toybox.Graphics;
+                symbol [ FONT_GLANCE %tmp.105 610 34 45 ];
+                %tmp.105 = getv %tmp.104 :FONT_GLANCE;
+                putv self :font %tmp.105;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [justification,609,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [font,610,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 613; @symbol_moduledef = [prompt_size__title_icon,613,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 613; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [scaleX,614,18,24]; @symbol_type<0> = [Float,614,28,33]; ]
+            const scaleX as Float = 0.15;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [scaleRelativeTo,615,18,33]; @symbol_type<0> = [String,615,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 618; @symbol_moduledef = [system_icon_dark__warning,618,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 618; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [filename,619,18,26]; @symbol_type<0> = [String,619,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_dark__warning.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [compress,620,18,26]; @symbol_type<0> = [String,620,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [dithering,621,18,27]; @symbol_type<0> = [String,621,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 622; @position = 18; @symbol_constdef = [automaticPalette,622,18,34]; @symbol_type<0> = [String,622,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 625; @symbol_moduledef = [prompt_loc__title_icon,625,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [x,626,18,19]; @symbol_type<0> = [Number,626,23,29]; ]
+            const x as Number = 140;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [y,627,18,19]; @symbol_type<0> = [Number,627,23,29]; ]
+            const y as Number = 42;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [horizontalJustification,628,18,41]; @symbol_type<0> = [String,628,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [verticalJustification,629,18,39]; @symbol_type<0> = [String,629,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 632; @symbol_moduledef = [prompt_font_enhanced_readability__title,632,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 632; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 633 18 ]
+                symbol [ Graphics %tmp.106 633 34 42 ];
+                %tmp.106 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.107 633 43 62 ];
+                %tmp.107 = getv %tmp.106 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.108 633 63 71 ];
+                %tmp.108 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.109 633 72 92 ];
+                %tmp.109 = getv %tmp.108 :TEXT_JUSTIFY_VCENTER;
+                %tmp.110 = bitor %tmp.107 %tmp.109;
+                putv self :justification %tmp.110;
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 634 18 ]
+                symbol [ Graphics %tmp.111 634 25 33 ];
+                %tmp.111 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.112 634 34 44 ];
+                %tmp.112 = getv %tmp.111 :FONT_SMALL;
+                putv self :font %tmp.112;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [justification,633,18,31]; ]
+            const justification;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [font,634,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 637; @symbol_moduledef = [prompt_color_dark__body,637,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 637; ]
+            <init> {
+[ "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen" 639 18 ]
+                symbol [ Graphics %tmp.113 639 31 39 ];
+                %tmp.113 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.114 639 40 57 ];
+                %tmp.114 = getv %tmp.113 :COLOR_TRANSPARENT;
+                putv self :background %tmp.114;
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [color,638,18,23]; @symbol_type<0> = [Number,638,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [background,639,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 642; @symbol_moduledef = [confirmation_icon__hint_delete,642,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 642; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [filename,643,18,26]; @symbol_type<0> = [String,643,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [dithering,644,18,27]; @symbol_type<0> = [String,644,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 647; @symbol_moduledef = [system_icon_light__hint_button_right_top,647,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 647; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [filename,648,18,26]; @symbol_type<0> = [String,648,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [dithering,649,18,27]; @symbol_type<0> = [String,649,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 652; @symbol_moduledef = [confirmation_size__body,652,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 652; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [width,653,18,23]; @symbol_type<0> = [Number,653,27,33]; ]
+            const width as Number = 168;
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [height,654,18,24]; @symbol_type<0> = [Number,654,28,34]; ]
+            const height as Number = 168;
+        }
+        [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 657; @symbol_moduledef = [system_icon_positive__check,657,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 657; ]
+            <init> {
+            }
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [filename,658,18,26]; @symbol_type<0> = [String,658,30,36]; ]
+            const filename as String = "/Users/kuba/Library/Application Support/Garmin/ConnectIQ/Devices/enduro3/system_icon_positive__check.svg";
+            [ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [dithering,659,18,27]; @symbol_type<0> = [String,659,31,37]; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/Users/kuba/projects/garmin/garmin-bridge/bridge/builds/00_enduro3/gen/006-B4575-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
